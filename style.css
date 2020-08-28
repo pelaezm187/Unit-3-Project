@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  }
+
 
 body {
   background: #ffb84d;
@@ -13,10 +17,6 @@ header {
   width: 100%;
 }
 
-* {
-  box-sizing: border-box;
-  }
-
 h1,
 h2,
 h3,
@@ -28,22 +28,22 @@ fieldset  {
 
 p {
   margin: 20px 0 10px 0px;
-}
+  }
 
 h1 {
- text-shadow: -2px 2px #fff;
-}
+  text-shadow: -2px 2px #fff;
+  }
 
 .tophr {
- border-top: 5px solid #008080;
- border-bottom: 2px solid #008080;
- border-right: 0;
- border-left: 0;
- margin: 0;
- padding: 2px;
- color: #008080;
- width: 100%;
-}
+  border-top: 5px solid #008080;
+  border-bottom: 2px solid #008080;
+  border-right: 0;
+  border-left: 0;
+  margin: 0px;
+  padding: 2px;
+  color: #008080;
+  width: 100%;
+  }
 
 .code-review {
   background: #ddd;
@@ -54,8 +54,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
+  }
 
 .main-form {
   text-align: left;
@@ -75,7 +74,6 @@ fieldset {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="email"],
 input[type="postal"],
 select,
 option,
@@ -89,6 +87,23 @@ textarea {
   border-radius: 5px;
   }
 
+input[type="postal"] {
+  width: 40%;
+  display: block;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+input:focus,
+select:focus,
+option:focus,
+textarea:focus  {
+  border: 0;
+  background: #ffb84d;
+}
+
 label {
   line-height: 2;
 }
@@ -98,10 +113,7 @@ input[type="radio"] {
   margin: 10px;
   }
 
-select,
-option {
- height: 40px;
-}
+
 
 button {
   width: 100%;
@@ -115,19 +127,47 @@ button {
   padding: 10px;
 }
 
+button:hover {
+  background: #ffb84d;
+}
+
+
   /*-------------- Media Queries ----------------*/
 
   @Media (min-width: 768px) {
 
     .container {
       margin: auto;
-      display: flex;
-      flex-direction: column;
       width: 768px;
     }
 
   .tophr {
     flex-direction: row;
   }
+  
+  .form-flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .form-flex label {
+  width: 25%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  option {
+    width: 75%;
+    margin: 5px 0;
+  }
+  input[type="postal"] {
+    width: 25%;
+    margin: 5px 0;
+  }
+  
+    }
+
 
   }

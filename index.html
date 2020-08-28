@@ -1,10 +1,12 @@
 <DOCTYPE HTML!>
 <HTML>
 <HEAD>
-
+<!----------------------- META TAG ------------------->
 <META CHARSET="UTF-8">
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<!----------------------- GOOGLE FONT ------------------->
+<LINK HREF="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <LINK HREF="style.css" REL="stylesheet">
 
 
@@ -26,56 +28,122 @@
 <HR CLASS="tophr">
 
   <MAIN>
+  
+
+<!----------------------- FORM TAG ------------------->
     <DIV CLASS="main-form">
-
       <FORM>
-        <FIELDSET>Contact information</FIELDSET>
+          <FIELDSET>Contact information</FIELDSET>
+          <DIV CLASS="form-flex">
+              <!-- TEXT INPUT -->
+              <LABEL FOR="name" CLASS="item">Full Name:</LABEL>
+                <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="text" ID="name" NAME="user_name">
+              
+              <!-- EMAIL INPUT -->
+              <LABEL CLASS="item" FOR="email">Email Address:</LABEL>
+                <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="email" ID="email" NAME="user_mail">
 
-        <LABEL FOR="name">Full Name:</LABEL>
-          <INPUT PLACEHOLDER="Required" TYPE="text" ID="name" NAME="user_name">
+              <!-- TELEPHONE INPUT -->
+              <LABEL FOR="phone">Phone Number:</LABEL>
+                <INPUT TYPE="tel" ID="phone" NAME="user_phone">
 
-        <LABEL FOR="email">Email Address:</LABEL>
-          <INPUT PLACEHOLDER="Required" TYPE="email" ID="email" NAME="user_mail">
+              <LABEL FOR="address">Street Address:</LABEL>
+                <INPUT TYPE="text" ID="address" NAME="user_address">
 
-        <LABEL FOR="phone">Phone Number:</LABEL>
-          <INPUT TYPE="tel" ID="phone" NAME="user_phone">
+              <LABEL FOR="city">City:</LABEL>
+                <INPUT TYPE="text" ID="city" NAME="user_city">
 
-        <LABEL FOR="address">Street Address:</LABEL>
-          <INPUT TYPE="text" ID="address" NAME="user_address">
+              <!-- SELECT MENU -->
+              <LABEL FOR="state">State:</LABEL>
+              <SELECT ID="state" NAME="user_state">
+                  
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
 
-        <LABEL FOR="city">City:</LABEL>
-          <INPUT TYPE="text" ID="city" NAME="user_city">
+              </SELECT>
 
-        <LABEL FOR="state">State:</LABEL>
-        <SELECT ID="state" NAME="user_state">
-            <!-- Shortened -->
-            <OPTION VALUE="AL">Alabama</OPTION>
-            <OPTION VALUE="AK">Alaska</OPTION>
-            <OPTION VALUE="AZ">Arizona</OPTION>
-      </SELECT>
-
-        <LABEL FOR="zipcode">Zip Code:</LABEL>
-          <INPUT TYPE="postal" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
-
-      <HR>
-
-        <FIELDSET>Newsletter</FIELDSET>
-        <P>Select the newsletters you would like to receive:</P>
-
-        <LABEL><INPUT TYPE="checkbox" ID="htmlnews" NAME="newsletter">Html News</LABEL><BR>
-        <LABEL><INPUT TYPE="checkbox" ID="cssnews" NAME="newsletter">CSS News</LABEL><BR>
-        <LABEL><INPUT TYPE="checkbox" ID="java-news" NAME="newsletter">Javascript News</LABEL><BR>
+              <LABEL FOR="zipcode">Zip Code:</LABEL>
+                <INPUT TYPE="postal" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
         
-        <P>Newsletter format:</P>
-        <INPUT TYPE="radio" ID="html" NAME="format"><LABEL>HTML</LABEL><BR>
-        <INPUT TYPE="radio" ID="plaintext" NAME="format"><LABEL>Plain Text</LABEL>
+          </DIV>    
+            
+          <HR>
 
-        <P>Other topics you'd like to hear about.</P>
-        <TEXTAREA ID="textarea"></TEXTAREA>
-        <BUTTON TYPE="submit">Sign Up!</BUTTON>
+          <FIELDSET>Newsletter</FIELDSET>
+            <P>Select the newsletters you would like to receive:</P>
 
-      </FORM>
+<!----------------------- CHECKBOXES ------------------->
 
+          <LABEL FOR="htmlnews">
+            <INPUT TYPE="checkbox" ID="htmlnews" NAME="newsletter">Html News</LABEL><BR>
+          <LABEL FOR="cssnews">
+            <INPUT TYPE="checkbox" ID="cssnews" NAME="newsletter">CSS News</LABEL><BR>
+          <LABEL FOR="java-news">
+            <INPUT TYPE="checkbox" ID="java-news" NAME="newsletter">Javascript News</LABEL><BR>
+
+<!----------------------- RADIO BUTTONS ------------------->
+
+          <P>Newsletter format:</P>
+            <INPUT TYPE="radio" ID="html" NAME="format"><LABEL>HTML</LABEL><BR>
+            <INPUT TYPE="radio" ID="plaintext" NAME="format"><LABEL>Plain Text</LABEL>
+
+          <P>Other topics you'd like to hear about:</P>
+
+<!----------------------- TEXTAREA ------------------->
+            <TEXTAREA ID="textarea" NAME="user_comment" ROWS="3"></TEXTAREA>
+
+            <BUTTON TYPE="submit" CLASS="button"><SPAN>Sign Up!</SPAN></BUTTON>
+
+        </FORM>
     </DIV>
   </MAIN>
 
