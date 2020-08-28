@@ -1,49 +1,41 @@
-<DOCTYPE HTML!>
-<HTML>
+<!DOCTYPE HTML>
+<HTML lang="en">
+
 <HEAD>
-<!----------------------- META TAG ------------------->
+
 <META CHARSET="UTF-8">
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
 
-<!----------------------- GOOGLE FONT ------------------->
 <LINK HREF="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <LINK HREF="style.css" REL="stylesheet">
 
-
-<TITLE>Online Registration Form
-</TITLE>
-
+  <TITLE>Online Registration Form
+  </TITLE>
 </HEAD>
 
 <BODY>
 
-
   <HEADER>
-    <H3 CLASS="code-review">The Code Review<H3>
+    <H3 CLASS="code-review">The Code Review</H3>
   </HEADER>
     <H1>Signup for our Newsletter</H1>
     <P>Get the latest news on how your code is doing right in your inbox.</P>
 
 <DIV ClASS="container"> 
 <HR CLASS="tophr">
-
   <MAIN>
-  
 
-<!----------------------- FORM TAG ------------------->
     <DIV CLASS="main-form">
       <FORM>
           <FIELDSET>Contact information</FIELDSET>
           <DIV CLASS="form-flex">
-              <!-- TEXT INPUT -->
+
               <LABEL FOR="name" CLASS="item">Full Name:</LABEL>
                 <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="text" ID="name" NAME="user_name">
               
-              <!-- EMAIL INPUT -->
               <LABEL CLASS="item" FOR="email">Email Address:</LABEL>
                 <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="email" ID="email" NAME="user_mail">
 
-              <!-- TELEPHONE INPUT -->
               <LABEL FOR="phone">Phone Number:</LABEL>
                 <INPUT TYPE="tel" ID="phone" NAME="user_phone">
 
@@ -53,7 +45,6 @@
               <LABEL FOR="city">City:</LABEL>
                 <INPUT TYPE="text" ID="city" NAME="user_city">
 
-              <!-- SELECT MENU -->
               <LABEL FOR="state">State:</LABEL>
               <SELECT ID="state" NAME="user_state">
                   
@@ -112,7 +103,7 @@
               </SELECT>
 
               <LABEL FOR="zipcode">Zip Code:</LABEL>
-                <INPUT TYPE="postal" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
+                <INPUT TYPE="text" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
         
           </DIV>    
             
@@ -121,7 +112,7 @@
           <FIELDSET>Newsletter</FIELDSET>
             <P>Select the newsletters you would like to receive:</P>
 
-<!----------------------- CHECKBOXES ------------------->
+
 
           <LABEL FOR="htmlnews">
             <INPUT TYPE="checkbox" ID="htmlnews" NAME="newsletter">Html News</LABEL><BR>
@@ -130,7 +121,7 @@
           <LABEL FOR="java-news">
             <INPUT TYPE="checkbox" ID="java-news" NAME="newsletter">Javascript News</LABEL><BR>
 
-<!----------------------- RADIO BUTTONS ------------------->
+
 
           <P>Newsletter format:</P>
             <INPUT TYPE="radio" ID="html" NAME="format"><LABEL>HTML</LABEL><BR>
@@ -138,7 +129,7 @@
 
           <P>Other topics you'd like to hear about:</P>
 
-<!----------------------- TEXTAREA ------------------->
+
             <TEXTAREA ID="textarea" NAME="user_comment" ROWS="3"></TEXTAREA>
 
             <BUTTON TYPE="submit" CLASS="button"><SPAN>Sign Up!</SPAN></BUTTON>
