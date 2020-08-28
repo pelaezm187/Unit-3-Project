@@ -162,6 +162,12 @@ button:hover {
   #zipcode {
     width: 25%;
     margin: 5px 0;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
     }
+
+  #zipcode:focus {
+  width: 75%;
+  }
 
   }
