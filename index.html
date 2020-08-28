@@ -1,0 +1,91 @@
+<DOCTYPE HTML!>
+<HTML>
+<HEAD>
+
+<META CHARSET="UTF-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<LINK HREF="style.css" REL="stylesheet">
+
+
+<TITLE>Online Registration Form
+</TITLE>
+
+</HEAD>
+
+<BODY>
+
+
+  <HEADER>
+    <H3 CLASS="code-review">The Code Review<H3>
+  </HEADER>
+    <H1>Signup for our Newsletter</H1>
+    <P>Get the latest news on how your code is doing right in your inbox.</P>
+
+<DIV ClASS="container"> 
+<HR CLASS="tophr">
+
+  <MAIN>
+    <DIV CLASS="main-form">
+
+      <FORM>
+        <FIELDSET>Contact information</FIELDSET>
+
+        <LABEL FOR="name">Full Name:</LABEL>
+          <INPUT PLACEHOLDER="Required" TYPE="text" ID="name" NAME="user_name">
+
+        <LABEL FOR="email">Email Address:</LABEL>
+          <INPUT PLACEHOLDER="Required" TYPE="email" ID="email" NAME="user_mail">
+
+        <LABEL FOR="phone">Phone Number:</LABEL>
+          <INPUT TYPE="tel" ID="phone" NAME="user_phone">
+
+        <LABEL FOR="address">Street Address:</LABEL>
+          <INPUT TYPE="text" ID="address" NAME="user_address">
+
+        <LABEL FOR="city">City:</LABEL>
+          <INPUT TYPE="text" ID="city" NAME="user_city">
+
+        <LABEL FOR="state">State:</LABEL>
+        <SELECT ID="state" NAME="user_state">
+            <!-- Shortened -->
+            <OPTION VALUE="AL">Alabama</OPTION>
+            <OPTION VALUE="AK">Alaska</OPTION>
+            <OPTION VALUE="AZ">Arizona</OPTION>
+      </SELECT>
+
+        <LABEL FOR="zipcode">Zip Code:</LABEL>
+          <INPUT TYPE="postal" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
+
+      <HR>
+
+        <FIELDSET>Newsletter</FIELDSET>
+        <P>Select the newsletters you would like to receive:</P>
+
+        <LABEL><INPUT TYPE="checkbox" ID="htmlnews" NAME="newsletter">Html News</LABEL><BR>
+        <LABEL><INPUT TYPE="checkbox" ID="cssnews" NAME="newsletter">CSS News</LABEL><BR>
+        <LABEL><INPUT TYPE="checkbox" ID="java-news" NAME="newsletter">Javascript News</LABEL><BR>
+        
+        <P>Newsletter format:</P>
+        <INPUT TYPE="radio" ID="html" NAME="format"><LABEL>HTML</LABEL><BR>
+        <INPUT TYPE="radio" ID="plaintext" NAME="format"><LABEL>Plain Text</LABEL>
+
+        <P>Other topics you'd like to hear about.</P>
+        <TEXTAREA ID="textarea"></TEXTAREA>
+        <BUTTON TYPE="submit">Sign Up!</BUTTON>
+
+      </FORM>
+
+    </DIV>
+  </MAIN>
+
+
+  <FOOTER>
+    <P>&copy; Copyright The Code Review</P>
+  </FOOTER>
+  
+</DIV>
+
+
+</BODY>
+</HTML>
