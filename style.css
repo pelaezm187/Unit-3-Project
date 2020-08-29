@@ -20,11 +20,15 @@ header {
 h1,
 h2,
 h3,
-fieldset  {
+legend {
   font-family: 'lobster', sans-serif;
   color: #008080;
   border: 0;
   }
+
+legend {
+  margin: 20px 0;
+}
 
 p {
   margin: 20px 0 10px 0px;
@@ -62,13 +66,14 @@ h1 {
   border: 0;
   border-radius: 10px;
   margin: 10px;
-  padding: 20px 10px 10px 10px;
+  padding: 10px;
   box-shadow: 1px 1px  6px 2px #888;
   }
 
 fieldset {
-  margin-bottom: 10px;
+  border: 0;
   padding: 0;
+  margin: 0;
   }
 
 input[type="text"],
@@ -76,30 +81,33 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-  background-color: #ccc;
+  background: #ccc;
   font-family: sans-serif;
   font-size: 15px;
   width: 100%;
   padding: 10px;
   border: 0;
   border-radius: 5px;
-  }
-
-#zipcode {
-  width: 40%;
-  display: block;
-  }
-
-::placeholder {
-  text-align: center;
+  transition: 1s;
   }
 
 input:focus,
 select:focus,
 option:focus,
 textarea:focus  {
-  border: 0;
+
   background: #ffb84d;
+  box-shadow: 0px 0 8px 6px #888;
+  
+  }
+
+#zipcode {
+  display: block;
+  width: 40%;
+  }
+
+::placeholder {
+  text-align: center;
   }
 
 label {
@@ -158,16 +166,8 @@ button:hover {
     width: 75%;
     margin: 5px 0;
     }
-
+  
   #zipcode {
     width: 25%;
     margin: 5px 0;
-    -webkit-transition: width .35s ease-in-out;
-    transition: width .35s ease-in-out;
-    }
-
-  #zipcode:focus {
-  width: 75%;
-  }
-
   }

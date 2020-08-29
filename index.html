@@ -27,26 +27,28 @@
 
     <DIV CLASS="main-form">
       <FORM>
-          <FIELDSET>Contact information</FIELDSET>
-          <DIV CLASS="form-flex">
+          <FIELDSET>
+              <LEGEND>Contact information</LEGEND>
+
+            <DIV CLASS="form-flex">
 
               <LABEL FOR="name" CLASS="item">Full Name:</LABEL>
-                <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="text" ID="name" NAME="user_name">
+                <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="text" ID="name" NAME="user_name" REQUIRED>
               
               <LABEL CLASS="item" FOR="email">Email Address:</LABEL>
-                <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="email" ID="email" NAME="user_mail">
+                <INPUT CLASS="item" PLACEHOLDER="Required" TYPE="email" ID="email" NAME="user_mail" REQUIRED>
 
               <LABEL FOR="phone">Phone Number:</LABEL>
-                <INPUT TYPE="tel" PLACEHOLDER="Required" ID="phone" NAME="user_phone">
+                <INPUT TYPE="tel" PLACEHOLDER="Required" ID="phone" NAME="user_phone" REQUIRED>
 
               <LABEL FOR="address">Street Address:</LABEL>
-                <INPUT TYPE="text" PLACEHOLDER="Required" ID="address" NAME="user_address">
+                <INPUT TYPE="text" ID="address" NAME="user_address" REQUIRED>
 
               <LABEL FOR="city">City:</LABEL>
-                <INPUT TYPE="text" PLACEHOLDER="Required" ID="city" NAME="user_city">
+                <INPUT TYPE="text" ID="city" NAME="user_city" REQUIRED>
 
               <LABEL FOR="state">State:</LABEL>
-              <SELECT ID="state" NAME="user_state">
+              <SELECT ID="state" NAME="user_state" REQUIRED>
                   
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
@@ -103,13 +105,13 @@
               </SELECT>
 
               <LABEL FOR="zipcode">Zip Code:</LABEL>
-                <INPUT TYPE="text" PLACEHOLDER="Required" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
+                <INPUT TYPE="text" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
         
-          </DIV>    
+            </DIV>    
             
           <HR>
 
-          <FIELDSET>Newsletter</FIELDSET>
+          <LEGEND>Newsletter</LEGEND>
             <P>Select the newsletters you would like to receive:</P>
 
 
@@ -124,16 +126,16 @@
 
 
           <P>Newsletter format:</P>
-            <INPUT TYPE="radio" ID="html" NAME="format"><LABEL>HTML</LABEL><BR>
-            <INPUT TYPE="radio" ID="plaintext" NAME="format"><LABEL>Plain Text</LABEL>
+            <INPUT TYPE="radio" ID="html" NAME="format"><LABEL FOR="html">HTML</LABEL><BR>
+            <INPUT TYPE="radio" ID="plaintext" NAME="format"><LABEL FOR="plaintext">Plain Text</LABEL>
 
           <P>Other topics you'd like to hear about:</P>
 
 
             <TEXTAREA ID="textarea" NAME="user_comment" ROWS="3"></TEXTAREA>
 
-            <BUTTON TYPE="submit" CLASS="button"><SPAN>Sign Up!</SPAN></BUTTON>
-
+            <BUTTON TYPE="submit" CLASS="button" NAME="submit_button"><SPAN>Sign Up!</SPAN></BUTTON>
+          </FIELDSET>
         </FORM>
     </DIV>
   </MAIN>
