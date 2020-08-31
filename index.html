@@ -48,9 +48,9 @@
                 <INPUT TYPE="text" ID="city" NAME="user_city" REQUIRED>
 
               <LABEL FOR="state">State:</LABEL>
-              <SELECT ID="state" NAME="user_state" REQUIRED>
-                  
-                  <option value="AL">Alabama</option>
+              <SELECT ID="state" NAME="user_state" MULTIPLE REQUIRED>
+
+                  <option value="AL" >Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
                   <option value="AR">Arkansas</option>
@@ -106,11 +106,13 @@
 
               <LABEL FOR="zipcode">Zip Code:</LABEL>
                 <INPUT TYPE="text" ID="zipcode" NAME="user_zipcode" MAXLENGTH="5">
-        
-            </DIV>    
+            </DIV>
+         </FIELDSET>  
+                
             
           <HR>
-
+          
+          <FIELDSET>
           <LEGEND>Newsletter</LEGEND>
             <P>Select the newsletters you would like to receive:</P>
 
@@ -137,7 +139,7 @@
             <BUTTON TYPE="submit" CLASS="button" NAME="submit_button">Sign Up!</BUTTON>
           </FIELDSET>
         </FORM>
-    </DIV>
+      </DIV>
   </MAIN>
 
 
